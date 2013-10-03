@@ -1,0 +1,18 @@
+// embed web fonts
+@font-face {
+    font-family: 'yekan';
+    src: url('/font/lmu_yekan-webfont.eot?') format('eot'),
+      url('/font/lmu_yekan-webfont.woff') format('woff'),
+      url('/font/lmu_yekan-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mitra';
+    src: url('/font/BMitra-Regular.eot?') format('eot'),
+      url('/font/BMitra-Regular.woff') format('woff'),
+      url('/font/BMitra-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

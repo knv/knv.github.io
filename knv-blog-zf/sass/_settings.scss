@@ -21,7 +21,7 @@ $em-base: 16 !default;
   @return $num / ($num * 0 + 1);
 }
 
-// Converts "px" to "em" using the ($)em-base
+
 @function convert-to-em($value)  {
   $value: strip-unit($value) / strip-unit($em-base) * 1em;
   @if ($value == 0em) { $value: 0; } // Turn 0em into 0
@@ -29,12 +29,12 @@ $em-base: 16 !default;
 }
 
 // Working in ems is annoying. Think in pixels by using this handy function, emCalc(#)
-// Just enter the number, no need to mention "px"
+// Just enter the number, no need to mention px
 @function emCalc($values...) {
   $max: length($values); // Get the total number of parameters passed
 
   // If there is only 1 parameter, then return it as an integer.
-  // This is done because a list can't be multiplied or divided even if it contains a single value
+  // This is done because a list cant be multiplied or divided even if it contains a single value
   @if $max == 1 { @return convert-to-em(nth($values, 1)); }
 
   $emValues: (); // This will eventually store the converted $values in a list
@@ -51,9 +51,9 @@ $em-base: 16 !default;
 
 $default-float: left;
 
-// $body-bg: #fff;
+$body-bg: #fefefe;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "mitra", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -63,11 +63,11 @@ $default-float: left;
 
 // Text direction settings
 
-// $text-direction: ltr;
+$text-direction: rtl;
 
 // Colors
 
-// $primary-color: #2ba6cb;
+$primary-color: #8AC50C;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -160,7 +160,7 @@ $default-float: left;
 
 // Control header font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "yekan", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
